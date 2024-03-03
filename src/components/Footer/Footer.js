@@ -8,16 +8,16 @@ function Footer () {
           <h5>Grocery Gopher</h5>
           <ul className='nav flex-column'>
             <li className='nav-item mb-2'>
-              <a href='#' className='nav-link'>Home</a>
+              <a href='/' className='nav-link'>Home</a>
             </li>
             <li className='nav-item mb-2'>
-              <a href='#' className='nav-link'>Grocery List</a>
+              <a href='/grocery-list' className='nav-link'>Grocery List</a>
             </li>
             <li className='nav-item mb-2'>
-              <a href='#' className='nav-link'>Pantry</a>
+              <a href='/pantry' className='nav-link'>Pantry</a>
             </li>
             <li className='nav-item mb-2'>
-              <a href='#' className='nav-link'>Recipes</a>
+              <a href='/recipes' className='nav-link'>Recipes</a>
             </li>
           </ul>
         </div>
@@ -25,13 +25,13 @@ function Footer () {
           <h5>More Information</h5>
           <ul className='nav flex-column'>
             <li className='nav-item mb-2'>
-              <a href='#' className='nav-link'>Account</a>
+              <a href='/account' className='nav-link'>Account</a>
             </li>
             <li className='nav-item mb-2'>
-              <a href='#' className='nav-link'>Contact</a>
+              <a href='/contact' className='nav-link'>Contact</a>
             </li>
             <li className='nav-item mb-2'>
-              <a href='#' className='nav-link'>About</a>
+              <a href='/about' className='nav-link'>About</a>
             </li>
           </ul>
       </div>
