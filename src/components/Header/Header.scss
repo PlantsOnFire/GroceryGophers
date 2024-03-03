@@ -1,7 +1,19 @@
 @import '../../styles/colors.scss';
 
 header {
+  background-color: white;
   #socials-login-bar {
     background-color: $light-green;
+  }
+  #logo {
+    width: 100px;
+    height: auto;
+    margin-right: 30px;
+  }
+  a.nav-link {
+    color: black;
+    &:hover {
+      color: $green;
+    }
   }
 }
