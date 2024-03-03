@@ -1,0 +1,18 @@
+@import '../../styles/colors.scss';
+
+footer {
+  background-color: $light-green;
+  color: black;
+  h5 {
+    font-weight: bold;
+  }
+  a.nav-link {
+    color: black;
+    font-size: 20px;
+    padding-right: 0px;
+    &:hover {
+      color: $purple;
+      font-weight: bold;
+    }
+  }
+}

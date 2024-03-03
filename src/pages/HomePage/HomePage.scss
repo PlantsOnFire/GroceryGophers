@@ -1,0 +1,12 @@
+@import '../../styles/colors.scss';
+
+main {
+  #gg-hero-container {
+    background-color: $purple;
+    #gg-hero {
+      height: 35vw;
+      width: auto;
+      padding-left: 10vw;
+    }
+  }
+}
