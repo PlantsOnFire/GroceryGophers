@@ -4,6 +4,15 @@ header {
   background-color: white;
   #socials-login-bar {
     background-color: $light-green;
+    .social-media {
+      color: black;
+      margin: 0px 10px;
+      width: 2em !important;
+      height: 2em !important;
+      &:hover {
+        color: $green;
+      }
+    }
   }
   #logo {
     width: 100px;

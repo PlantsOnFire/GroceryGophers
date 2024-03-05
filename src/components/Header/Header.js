@@ -1,13 +1,24 @@
 import './Header.scss';
+
 import logo from '../../assets/gopherLogo.png';
+import {FaFacebook, FaTwitter, FaInstagram} from 'react-icons/fa6';
 
 export default function Header() {
   return(
-    <header>
+    // Need to change to fixed-top eventually, but that requires reworking of styles throughout
+    <header /*className='fixed-top'R*/>
       <div className='container-fluid p-2' id='socials-login-bar'>
         <div className='d-flex flex-wrap align-items-center justify-content-center'>
           <div className='col'>
-            SOCIAL MEDIA LINKS
+            <a href='#'>
+              <FaFacebook className='social-media'/>              
+            </a>
+            <a href='#'>
+              <FaTwitter className='social-media'/>
+            </a>
+            <a href='#'>
+              <FaInstagram className='social-media'/>
+            </a>
           </div>
           <div className='text-end'>
             <a href='/account' className='nav-link'>LOGIN</a>

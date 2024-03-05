@@ -7,7 +7,7 @@ function GroceryListPage () {
       <div className='container'>
         <h1>Grocery List Page</h1>
         <div id='grocery-list'>
-          <h2>Your Grocery List</h2>
+          <div>INSERT BANNER IMAGE LATER</div>
           <GroceryList />
         </div>
       </div>
