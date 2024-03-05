@@ -1,5 +1,5 @@
 import './Header.scss';
-import logo from '../../assets/Gopher4purp.png';
+import logo from '../../assets/gopherLogo.png';
 
 export default function Header() {
   return(
