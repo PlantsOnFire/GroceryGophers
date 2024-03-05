@@ -1,5 +1,6 @@
 import './Header.scss';
-import logo from '../../assets/Gopher4purp.png';
+
+import logo from '../../assets/gopherLogo.png';
 import {FaFacebook, FaTwitter, FaInstagram} from 'react-icons/fa6';
 
 export default function Header() {
