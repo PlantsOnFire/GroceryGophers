@@ -1,5 +1,5 @@
 import './HomePage.scss';
-import gghero from '../../assets/GG-Hero.png';
+import gghero from '../../assets/GG-Hero-2.0.png';
 
 export default function HomePage() {
   return(
