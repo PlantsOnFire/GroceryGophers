@@ -8,6 +8,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import GroceryListPage from './pages/GroceryListPage/GroceryListPage';
 import PantryPage from './pages/PantryPage/PantryPage';
 import RecipePage from './pages/RecipePage/RecipePage';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
 
 import {Routes, Route} from 'react-router-dom';
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/account' element={<AccountPage />} />
         <Route path='/about' element={<AboutUsPage />} />
         <Route path='/contact' element={<ContactPage />} />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
       <Footer />
     </>
