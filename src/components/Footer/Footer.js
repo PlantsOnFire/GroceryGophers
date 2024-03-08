@@ -1,40 +1,35 @@
 import './Footer.scss';
+import { NavLink } from 'react-router-dom';
 
 function Footer () {
   return(
-    <footer className='row p-5 pb-3 align-items-start m-0'>
-      <div className='col'><h5>&copy; CAL Corp</h5></div>
-        <div className='col text-end'>
-          <h5>Grocery Gopher</h5>
-          <ul className='nav flex-column'>
-            <li className='nav-item mb-2'>
-              <a href='/' className='nav-link'>Home</a>
-            </li>
-            <li className='nav-item mb-2'>
-              <a href='/grocery-list' className='nav-link'>Grocery List</a>
-            </li>
-            <li className='nav-item mb-2'>
-              <a href='/pantry' className='nav-link'>Pantry</a>
-            </li>
-            <li className='nav-item mb-2'>
-              <a href='/recipes' className='nav-link'>Recipes</a>
-            </li>
-          </ul>
-        </div>
-        <div className='col  text-end'>
-          <h5>More Information</h5>
-          <ul className='nav flex-column'>
-            <li className='nav-item mb-2'>
-              <a href='/account' className='nav-link'>Account</a>
-            </li>
-            <li className='nav-item mb-2'>
-              <a href='/contact' className='nav-link'>Contact</a>
-            </li>
-            <li className='nav-item mb-2'>
-              <a href='/about' className='nav-link'>About</a>
-            </li>
-          </ul>
-      </div>
+    <footer className='py-3'>
+      <ul className="nav justify-content-around justify-items-center pb-2 text-center col mb-3 container">
+        <li class="nav-item pb-2 text-center col">
+          <NavLink to='/' className='nav-link'>Home</NavLink>
+        </li>
+        <li class="nav-item pb-2 text-center col">
+          <NavLink to='/grocery-list' className='nav-link'>Grocery List</NavLink>
+        </li>
+        <li class="nav-item pb-2 text-center col">
+          <NavLink to='/pantry' className='nav-link'>Pantry</NavLink>
+        </li>
+        <li class="nav-item pb-2 text-center col">
+          <NavLink to='/recipes' className='nav-link'>Recipes</NavLink>
+        </li>
+        <li class="nav-item pb-2 text-center col">
+          <NavLink to='/account' className='nav-link'>Account</NavLink>
+        </li>
+        <li class="nav-item pb-2 text-center col">
+          <NavLink to='/contact' className='nav-link'>Contact</NavLink>
+        </li>
+        <li class="nav-item pb-2 text-center col">
+          <NavLink to='/about' className='nav-link'>About</NavLink>
+        </li>
+      </ul>
+      {/* <ul className="nav justify-content-center border-bottom pb-2 text-center col mb-3">
+      </ul> */}
+      <div className="nav justify-content-center justify-items-center pb-2 text-center col mb-3">&copy; CAL Corp</div>
     </footer>
   )
 }
