@@ -1,13 +1,18 @@
 import GroceryList from '../../components/GroceryList/GroceryList';
+import uuid from 'react-uuid';
 import './GroceryListPage.scss';
+import {ReactComponent as GroceryListBanner} from '../../assets/GroceryListBanner-01.svg';
 
 function GroceryListPage () {
+
   return(
     <main>
-      <div className='container'>
-        <h1>Grocery List Page</h1>
+      <GroceryListBanner />
+      <div className='container my-4'>
         <div id='grocery-list'>
-          <div>INSERT BANNER IMAGE LATER</div>
+          {
+
+          }
           <GroceryList />
         </div>
       </div>
