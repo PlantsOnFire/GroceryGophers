@@ -1,7 +1,7 @@
-import GroceryList from '../../components/GroceryList/GroceryList';
+import GroceryList from '../../../components/GroceryList/GroceryList';
 import uuid from 'react-uuid';
 import './GroceryListPage.scss';
-import {ReactComponent as GroceryListBanner} from '../../assets/GroceryListBanner-01.svg';
+import {ReactComponent as GroceryListBanner} from '../../../assets/GroceryListBanner-01.svg';
 
 function GroceryListPage () {
 

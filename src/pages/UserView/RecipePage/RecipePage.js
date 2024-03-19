@@ -1,5 +1,5 @@
 import './RecipePage';
-import Recipes from '../../components/Recipes/Recipes';
+import Recipes from '../../../components/Recipes/Recipes';
 
 function RecipePage () {
   return (

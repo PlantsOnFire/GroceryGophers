@@ -1,6 +1,6 @@
 import './PantryPage.scss';
-import PantryForm from '../../components/PantryForm/PantryForm';
-import {ReactComponent as PantryBanner} from '../../assets/PantryBanner.svg';
+import PantryForm from '../../../components/PantryForm/PantryForm';
+import {ReactComponent as PantryBanner} from '../../../assets/PantryBanner.svg';
 
 function PantryPage () {
   return (
