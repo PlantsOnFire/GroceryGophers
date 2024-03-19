@@ -9,4 +9,21 @@ main {
       padding-left: 10vw;
     }
   }
+  ul {
+    li{
+      background-color: $purple;
+      margin:1vw 3vw 0vw 3vw;
+    }
+    a.nav-link {
+      color: $dark-green;
+      font-size: 30px;
+      padding-bottom: 1vw;
+      padding-top: 1vw;
+      &:hover {
+        background-color: $green;
+        color: black;
+        font-weight: bold;
+      }
+    }    
+  }
 }

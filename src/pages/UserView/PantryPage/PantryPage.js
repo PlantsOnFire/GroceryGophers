@@ -1,17 +1,19 @@
 import './PantryPage.scss';
-import PantryForm from '../../../components/PantryForm/PantryForm';
 import {ReactComponent as PantryBanner} from '../../../assets/PantryBanner.svg';
+import PantryList from '../../../components/PantryList/PantryList';
 
 function PantryPage () {
   return (
-    <main>
+      <main>
       <PantryBanner />
-      <div className='container'>
-        <h1>Pantry Page</h1>
-        <h2>This is what you have in your pantry</h2>
-        <PantryForm />
-      </div>
+      <div className='container my-4'>
+        <div id='pantry'>
+          {
 
+          }
+          <PantryList />
+        </div>
+      </div>
     </main>
   )
 }
