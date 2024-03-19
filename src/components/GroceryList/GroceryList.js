@@ -81,7 +81,11 @@ function GroceryList () {
       const reqURL = `${API_URL}/${id}`;
       const result = await apiRequest(reqURL, putOptions);
       if (result) setFetchError(result);
-  };
+  }
+  //==============REMOVE ALL GROCERY-LIST ITEMS =================
+  const deleteList =()=>{
+    setGroceryList([]);
+  }
 
   return(
     <div>
@@ -93,6 +97,7 @@ function GroceryList () {
           : groceryList.map(item => <GroceryItem key={item.id} item={item} onSetToggle={handleSetToggle}/>)
       }
       <GroceryForm onFormSubmit={handleAddItem}/>
+      <button onClick={deleteList}>Delete List</button>
     </div>
   )
 }

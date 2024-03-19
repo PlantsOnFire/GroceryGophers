@@ -22,11 +22,16 @@ function PantryList () {
     })
     setPantryList(updatedPantryList);
   }
+  //==============REMOVE ALL PANTRY ITEMS =================
+  const deleteList =()=>{
+    setPantryList([]);
+  }
   return(
     <div>
       <h3>My Pantry List</h3>
       {pantryList.map(item => <PantryItem key={item.id} item={item} onSetToggle={handleSetToggle}/>)}
       <PantryForm onFormSubmit={handleAddItem}/>
+      <button onClick={deleteList}>Delete List</button>
     </div>
   )
 }
