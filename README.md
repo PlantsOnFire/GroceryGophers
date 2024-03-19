@@ -5,9 +5,8 @@
 
 
 ### Reminders:
-- need to fix 'NavLink' for routes
 - Create PageNotFound page
-- Create banners
+- Create banners - half done
 - Update footer for better design
 - Functionality for grocery list remove, update, clear all
 - Figure out Pantry UI
