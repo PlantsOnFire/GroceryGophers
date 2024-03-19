@@ -4,24 +4,24 @@ import {useState} from 'react';
 
 
 function GroceryForm (props) {
-  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
   const [error, setError] = useState('');
 
   function submitItem(e) {
     e.preventDefault();
     const validate = [];
-    title === '' && validate.push({message: 'Field cannot be empty.', id: 'empty-title'});
-    title.length > 30 && validate.push({message: 'Grocery item cannot be longer than 30 characters', id: 'long-title'});
+    description === '' && validate.push({message: 'Field cannot be empty.', id: 'empty-description'});
+    description.length > 30 && validate.push({message: 'Grocery item cannot be longer than 30 characters', id: 'long-description'});
     setError(validate);
     if (validate.length === 0) {
-      props.onFormSubmit(title);
-      setTitle('');
+      props.onFormSubmit(description);
+      setDescription('');
     }
   }
 
   return (
     <form onSubmit={submitItem} className='row'>
-      <input className='col-2' type='text' id='grocery-item' placeholder='Type next grocery item' value={title} maxLength={30} onChange={(e) => setTitle(e.target.value)}/>
+      <input className='col-2' type='text' id='grocery-item' placeholder='Type next grocery item' value={description} maxLength={30} onChange={(e) => setDescription(e.target.value)}/>
       <button className='col-2' type='submit'>Add Item</button>
     </form>
   )
