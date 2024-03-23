@@ -1,7 +1,6 @@
 import GroceryItem from './GroceryItem/GroceryItem';
 import GroceryForm from './GroceryForm/GroceryForm';
 import './GroceryList.scss';
-import uuid from 'react-uuid';
 import { useState, useEffect } from 'react';
 import apiRequest from '../../api/apiRequest';
 
@@ -82,9 +81,31 @@ function GroceryList () {
       const result = await apiRequest(reqURL, putOptions);
       if (result) setFetchError(result);
   }
-  //==============REMOVE ALL GROCERY-LIST ITEMS =================
-  const deleteList =()=>{
-    setGroceryList([]);
+  //==============REMOVE GROCERY-LIST ITEM =================
+  const handleDeleteItem = async(id)=>{
+    //Get Item ID
+    const updatedGroceryList = [...groceryList];
+    let myItem = {};
+    updatedGroceryList.forEach(item => {
+      if(item.id === id) {
+        myItem = item;
+      }
+    });
+
+    //Delete Task from state
+    const updatedTasks = groceryList.filter(task => task.id !== id);
+    setGroceryList(updatedTasks);
+    const deleteOptions = {
+      method: 'DELETE',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(myItem)
+    };
+    const reqURL = `${API_URL}/${id}`;
+    const result = await apiRequest(reqURL, deleteOptions);
+    if (result) setFetchError(result);
+
   }
 
   return(
@@ -94,10 +115,9 @@ function GroceryList () {
         ?<div>Loading...</div>
         : fetchError 
           ? <div className='error'>{fetchError}</div>
-          : groceryList.map(item => <GroceryItem key={item.id} item={item} onSetToggle={handleSetToggle}/>)
+          : groceryList.map(item => <GroceryItem key={item.id} item={item} onSetToggle={handleSetToggle} onDeleteItem={handleDeleteItem}/>)
       }
       <GroceryForm onFormSubmit={handleAddItem}/>
-      <button onClick={deleteList}>Delete List</button>
     </div>
   )
 }

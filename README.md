@@ -5,6 +5,7 @@
 
 
 ### Reminders:
+- Delete all tasks function is not possible on DB - would be resource heavy
 - Create PageNotFound page
 - Create banners - half done
 - Update footer for better design
