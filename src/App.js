@@ -36,7 +36,7 @@ function App() {
           <Route path='account' element={<AccountPage />} />
         </Route>
         <Route path='/public' element={<PublicView/>}>
-          <Route path='account'element={<PublicAccount/>}/>
+          <Route path='account'element={<PublicAccount isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn}/>}/>
           <Route path='grocery-list' element={<GroceryPublicPage/>}/>
           <Route path='pantry' element={<PantryPublicPage/>}/>          
           <Route path='recipes' element={<RecipesPublicPage/>}/>

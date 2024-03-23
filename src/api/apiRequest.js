@@ -2,7 +2,9 @@
 const apiRequest = async (url = '', optionsObject = null, errMsg = null) => {
   try {
     const response = await fetch(url, optionsObject);
-    if (!response.ok) throw Error('Please reload the app. Something went wrong.');
+    // console.log(response.body);
+    const resJSON = await response.json();
+    if (!response.ok) throw Error(resJSON.message);
   } catch (err) {
     errMsg = err.message;
     return errMsg;
