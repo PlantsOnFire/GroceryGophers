@@ -1,0 +1,15 @@
+@import '../../../styles/colors.scss';
+
+#switch-form-background {
+  background-color: $purple;
+  padding-bottom: 10px;
+  #switch-form {
+    background-color: $purple;
+    padding: 25px;
+    padding-bottom: 15px;
+    font-size: 26px;
+    &:hover {
+      background-color: $green;
+    }
+  }  
+}

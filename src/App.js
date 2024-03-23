@@ -22,7 +22,7 @@ import PublicAccount from './pages/PublicView/PublicAccount/PublicAccount';
 
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(true);
+  const [isLoggedIn, setLoggedIn] = useState(false);
   return (
     <>
       <Header isLoggedIn={isLoggedIn}/>
