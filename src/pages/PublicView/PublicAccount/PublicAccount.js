@@ -3,7 +3,7 @@ import LoginForm from "../../../components/LoginForm/LoginForm";
 import { useState } from "react";
 import './PublicAccount.scss';
 
-function PublicAccount () {
+function PublicAccount ({isLoggedIn, setLoggedIn}) {
   const [accountForm, setAccountForm] = useState('register');
   function toggleForm () {
     accountForm === 'register' ? setAccountForm('login') : setAccountForm('register');
@@ -26,7 +26,7 @@ function PublicAccount () {
               Need to register for an account? Register here!
             </div>
           </div>
-          <LoginForm/>
+          <LoginForm isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn}/>
         </>
       }
       
