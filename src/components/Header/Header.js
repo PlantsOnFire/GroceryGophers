@@ -8,7 +8,6 @@ import UserNav from './UserNav/UserNav';
 export default function Header({isLoggedIn}) {
 
   return(
-    // Need to change to fixed-top eventually, but that requires reworking of styles throughout
     <header /*className='fixed-top'R*/>
       <div className='container-fluid p-2' id='socials-login-bar'>
         <div className='d-flex flex-wrap align-items-center justify-content-center'>
@@ -25,7 +24,10 @@ export default function Header({isLoggedIn}) {
           </div>
           <div className='text-end'>
             {isLoggedIn 
-              ? <Link className='nav-link' to='/user/account'>Account</Link>
+              ? <>
+                <Link className='nav-link d-inline mx-3' to='/user/account'>Account</Link>
+                <Link className='nav-link d-inline' to='/user/logout'>Logout</Link>
+              </>
               : <Link className='nav-link' to='/public/account'>Login/Register</Link>
             }
           </div>

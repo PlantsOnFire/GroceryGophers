@@ -51,7 +51,7 @@ function GroceryList () {
       body: JSON.stringify(newItem)
     };
     const result = await apiRequest(API_URL, postOptions);//returns null or errMsg
-    if (result) setFetchError(result);
+    if (result.errMsg) setFetchError(result.errMsg);
     getFetchData(); //Update UI
   }
 
@@ -79,7 +79,7 @@ function GroceryList () {
     };
       const reqURL = `${API_URL}/${id}`;
       const result = await apiRequest(reqURL, putOptions);
-      if (result) setFetchError(result);
+      if (result.errMsg) setFetchError(result.errMsg);
   }
   //==============REMOVE GROCERY-LIST ITEM =================
   const handleDeleteItem = async(id)=>{
@@ -104,7 +104,7 @@ function GroceryList () {
     };
     const reqURL = `${API_URL}/${id}`;
     const result = await apiRequest(reqURL, deleteOptions);
-    if (result) setFetchError(result);
+    if (result.errMsg) setFetchError(result.errMsg);
 
   }
 

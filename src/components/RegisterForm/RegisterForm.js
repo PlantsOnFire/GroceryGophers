@@ -70,7 +70,7 @@ function RegisterForm () {
     };
     setFetchError(null);
     const result = await apiRequest(API_URL, postOptions);
-    if (result) setFetchError(result);
+    if (result.errMsg) setFetchError(result.errMsg);
     //======Update UI to tell user their account is created!======
   }
   return(

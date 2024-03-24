@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -19,10 +19,15 @@ import RecipesPublicPage from './pages/PublicView/RecipesPublicPage/RecipesPubli
 
 import {Routes, Route} from 'react-router-dom';
 import PublicAccount from './pages/PublicView/PublicAccount/PublicAccount';
+import LogoutPage from './pages/UserView/LogoutPage/LogoutPage';
 
+import verifyLoggedIn from './api/verifyLoggedIn';
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
+  useEffect(()=> {
+    verifyLoggedIn('test');
+  })
   return (
     <>
       <Header isLoggedIn={isLoggedIn}/>
@@ -34,6 +39,7 @@ function App() {
           <Route path='recipes' element={<RecipePage />} />
           <Route path='pantry' element={<PantryPage />} />
           <Route path='account' element={<AccountPage />} />
+          <Route path='logout' element={<LogoutPage isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn}/>}/>
         </Route>
         <Route path='/public' element={<PublicView/>}>
           <Route path='account'element={<PublicAccount isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn}/>}/>
