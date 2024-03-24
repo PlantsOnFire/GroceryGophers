@@ -44,8 +44,8 @@ function LoginForm ({isLoggedIn, setLoggedIn}) {
     };
     setFetchError(null);
     const result = await apiRequest(API_URL, postOptions);
-    if (result) setFetchError(result);
-    if (!result) setLoggedIn(true);
+    if (result.errMsg) setFetchError(result.errMsg);
+    if (!result.errMsg) setLoggedIn(true);
   }
   return(
     <>
