@@ -8,7 +8,7 @@ function UserNav () {
         <img src={logo} alt='grocery gopher logo gopher holding grocery bag' id='logo' />
         <Link className='nav-link' to='/'><h1 className='d-inline'>Grocery Gopher</h1></Link>
       </div>
-      <ul className='nav d-flex fs-4'>
+      <ul className='nav d-flex fs-4' id='navlinks'>
         <li className='nav-item mb-2'>
         <NavLink to='/' className='nav-link'>Home</NavLink>
         </li>

@@ -24,7 +24,7 @@ import LogoutPage from './pages/UserView/LogoutPage/LogoutPage';
 import verifyLoggedIn from './api/verifyLoggedIn';
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(true);
+  const [isLoggedIn, setLoggedIn] = useState(false);
   useEffect(()=> {
     verifyLoggedIn('test');
   })
