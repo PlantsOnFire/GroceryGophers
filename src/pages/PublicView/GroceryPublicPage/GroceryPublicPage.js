@@ -1,8 +1,12 @@
+import PublicMessage from "../../../components/PublicMessage/PublicMessage";
+import GroceryListBanner from '../../../components/Banners/GroceryListBanner';
+
 function GroceryPublicPage () {
   return (
-    <div>
-      Grocery Public Page
-    </div>
+    <>
+      <GroceryListBanner />
+      <PublicMessage/>
+    </>
   )
 }
 

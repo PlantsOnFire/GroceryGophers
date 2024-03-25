@@ -1,12 +1,29 @@
 import './HomePage.scss';
 import gghero from '../../assets/GG-Hero-2.0.png';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
-export default function HomePage() {
+export default function HomePage({isLoggedIn}) {
+  const [links, setLinks] = useState('');
+  useEffect(() => {
+    isLoggedIn 
+      ? setLinks([
+        '/user/grocery-list',
+        '/user/pantry',
+        '/user/recipes',
+        '/user/account',
+      ]) 
+      : setLinks([
+        '/public/grocery-list',
+        '/public/pantry',
+        '/public/recipes',
+        '/public/account',
+      ]);
+  }, [isLoggedIn])
   return(
     <main>
       <div className='row m-0' id='gg-hero-container'>
-        <img id='gg-hero' src={gghero} alt='Grocery bag displaying join here' />
+        <Link to={links[3]}><img id='gg-hero' src={gghero} alt='Grocery bag displaying join here' /></Link>
       </div>
       <div className='container p-5'>
         <h2>Welcome to Grocery Gopher.</h2>
@@ -20,18 +37,18 @@ export default function HomePage() {
       </div>
       <ul className="nav justify-content-around justify-items-center pb-2 text-center col mb-3 container">
         <li className="nav-item pb-2 text-center col">
-          <NavLink to='/public/grocery-list' className='nav-link'>Grocery List</NavLink>
+          <NavLink to={links[0]} className='nav-link'>Grocery List</NavLink>
         </li>
         <li className="nav-item pb-2 text-center col">
-          <NavLink to='/public/pantry' className='nav-link'>Pantry</NavLink>
+          <NavLink to={links[1]} className='nav-link'>Pantry</NavLink>
         </li>
         <li className="nav-item pb-2 text-center col">
-          <NavLink to='/public/recipes' className='nav-link'>Recipes</NavLink> 
+          <NavLink to={links[2]} className='nav-link'>Recipes</NavLink> 
         </li>
       </ul>
-      <ul className="nav justify-content-around justify-items-center pb-2 text-center col mb-3 container">
+      <ul className="nav justify-content-around justify-items-center pb-2 text-center col mb-5 container">
         <li className="nav-item pb-2 text-center col">
-          <NavLink to='/public/account' className='nav-link'>Account</NavLink>
+          <NavLink to={links[3]} className='nav-link'>Account</NavLink>
         </li>
         <li className="nav-item pb-2 text-center col">
           <NavLink to='/contact' className='nav-link'>Contact</NavLink>

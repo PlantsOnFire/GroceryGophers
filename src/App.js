@@ -24,7 +24,7 @@ import LogoutPage from './pages/UserView/LogoutPage/LogoutPage';
 import verifyLoggedIn from './api/verifyLoggedIn';
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(false);
+  const [isLoggedIn, setLoggedIn] = useState(true);
   useEffect(()=> {
     verifyLoggedIn('test');
   })
@@ -32,7 +32,7 @@ function App() {
     <>
       <Header isLoggedIn={isLoggedIn}/>
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path='/' element={<HomePage isLoggedIn={isLoggedIn} />} />
         {/* Protected Route Once Logged In */}
         <Route path='/user' element={<UserView/>}>
           <Route path='grocery-list' element={<GroceryListPage />} />
