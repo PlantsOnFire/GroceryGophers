@@ -2,6 +2,7 @@ import RegisterForm from "../../../components/RegisterForm/RegisterForm";
 import LoginForm from "../../../components/LoginForm/LoginForm";
 import { useState } from "react";
 import './PublicAccount.scss';
+import AccountBanner from "../../../components/Banners/AccountBanner";
 
 function PublicAccount ({isLoggedIn, setLoggedIn}) {
   const [accountForm, setAccountForm] = useState('register');
@@ -9,12 +10,13 @@ function PublicAccount ({isLoggedIn, setLoggedIn}) {
     accountForm === 'register' ? setAccountForm('login') : setAccountForm('register');
   }
   return(
-    <div className=''>
+    <main>
+      <AccountBanner/>
       {accountForm === 'register' 
         ? <>
         <div id='switch-form-background' className='mb-3'>
           <div id='switch-form' className='container-fluid text-center' onClick={toggleForm}>
-            Already a user? Login here!
+            Already a user? LOGIN here!
           </div>
         </div>
 
@@ -23,16 +25,13 @@ function PublicAccount ({isLoggedIn, setLoggedIn}) {
         : <>
           <div id='switch-form-background' className='mb-3'>
             <div id='switch-form' className='container-fluid text-center' onClick={toggleForm}>
-              Need to register for an account? Register here!
+              Need to register for an account? REGISTER here!
             </div>
           </div>
           <LoginForm isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn}/>
         </>
       }
-      
-
-      
-    </div>
+    </main>
   )
 }
 export default PublicAccount;

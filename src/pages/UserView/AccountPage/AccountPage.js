@@ -1,5 +1,6 @@
 import './AccountPage.scss';
 import { useEffect, useState } from 'react';
+import AccountBanner from '../../../components/Banners/AccountBanner';
 
 function AccountPage () {
   const API_URL = 'http://localhost:8080/users';
@@ -20,7 +21,10 @@ function AccountPage () {
 
   return(
     <main>
-      Account Page
+      <AccountBanner/>
+      <div className='container p-3'>
+        <h2>Your Account Information</h2>        
+      </div>
     </main>
   )
 }

@@ -1,6 +1,12 @@
+import PublicMessage from "../../../components/PublicMessage/PublicMessage";
+import PantryBanner from "../../../components/Banners/PantryBanner";
+
 function PantryPublicPage () {
   return(
-    <div>Pantry Public Page</div>
+    <>
+      <PantryBanner/>
+      <PublicMessage/>
+    </>
   )
 }
 

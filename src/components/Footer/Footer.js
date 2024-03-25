@@ -1,9 +1,10 @@
 import './Footer.scss';
 import { NavLink } from 'react-router-dom';
+import {ReactComponent as CALCorp} from '../../assets/CALCorp.svg';
 
 function Footer ({isLoggedIn}) {
   return(
-    <footer className='py-3'>
+    <footer className='py-3 pb-0'>
       <ul className="nav justify-content-around justify-items-center pb-2 text-center col mb-3 container">
         <li className="nav-item pb-2 text-center col">
           <NavLink to='/' className='nav-link'>Home</NavLink>
@@ -29,7 +30,9 @@ function Footer ({isLoggedIn}) {
       </ul>
       {/* <ul className="nav justify-content-center border-bottom pb-2 text-center col mb-3">
       </ul> */}
-      <div className="nav justify-content-center justify-items-center pb-2 text-center col mb-3">&copy; CAL Corp</div>
+      <div className="nav justify-content-center justify-items-center pb-2 text-center col">
+        <CALCorp id='cal-corp-logo'/>
+      </div>
     </footer>
   )
 }
