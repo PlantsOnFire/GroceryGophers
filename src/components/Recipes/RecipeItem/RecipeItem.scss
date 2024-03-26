@@ -7,8 +7,8 @@
     font-style: italic;
   }
   .recipe-image {
-    width: 20vw;
-    height: 20vw;
+    width: 100%;
+    aspect-ratio: 1/1;
     object-fit: cover;
   }
   .scroll-container {
