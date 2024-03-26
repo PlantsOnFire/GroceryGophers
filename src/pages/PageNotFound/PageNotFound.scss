@@ -1,0 +1,12 @@
+@import '../../styles/colors.scss';
+
+main {
+    #about-container {
+      background-color: $purple;
+      #aboutUs {
+        height: 9vw;
+        width: auto;
+        padding-left: 15vw;
+      }
+    }
+  }

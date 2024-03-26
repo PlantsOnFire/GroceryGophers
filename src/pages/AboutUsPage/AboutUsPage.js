@@ -6,12 +6,19 @@ function AboutUsPage () {
     <main>
       <AboutBanner/>
       <div className='container p-5'>
-        <h2>More Content Goes Here</h2>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim porttitor elit in cursus. Donec massa est, ultricies vitae semper dictum, euismod eget leo. Phasellus tincidunt eget ex eget ornare. Fusce condimentum velit non felis blandit lacinia. Donec tincidunt auctor turpis eu eleifend. Integer imperdiet convallis posuere. Sed tempor tortor quam, sit amet interdum purus molestie sed. Aliquam eget erat eget mauris suscipit efficitur. Praesent pellentesque tincidunt magna, a ultrices metus porta nec. Quisque posuere hendrerit sapien nec commodo. In rutrum nec libero a venenatis. Mauris molestie ligula id nibh aliquam, et lobortis massa semper. Etiam venenatis accumsan tortor, vitae mollis nisl suscipit sit amet. Ut turpis neque, placerat vitae elit eget, auctor luctus libero. Nulla consectetur mi eu arcu egestas laoreet.</div>
-      </div>
-      <div className='container p-5'>
-        <h2>More Content Goes Here</h2>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim porttitor elit in cursus. Donec massa est, ultricies vitae semper dictum, euismod eget leo. Phasellus tincidunt eget ex eget ornare. Fusce condimentum velit non felis blandit lacinia. Donec tincidunt auctor turpis eu eleifend. Integer imperdiet convallis posuere. Sed tempor tortor quam, sit amet interdum purus molestie sed. Aliquam eget erat eget mauris suscipit efficitur. Praesent pellentesque tincidunt magna, a ultrices metus porta nec. Quisque posuere hendrerit sapien nec commodo. In rutrum nec libero a venenatis. Mauris molestie ligula id nibh aliquam, et lobortis massa semper. Etiam venenatis accumsan tortor, vitae mollis nisl suscipit sit amet. Ut turpis neque, placerat vitae elit eget, auctor luctus libero. Nulla consectetur mi eu arcu egestas laoreet.</div>
+        <h2>About Grocery Gpoher</h2>
+        <div>Grocery Gopher was created by CAL corp. <br/>
+        It was crafted in order to help people who can't remember what is in their pantry while shopping.<br/>
+        It was also crafted to keep track of the groceries that you need to pick up when out.<br/>
+        It does provide some recipes and with hopes of becoming more useful with recipes provided to users from ingredients in their pantry.<br/>
+        Gorcery Gopher is a great site to help with all your grocery needs.</div>
+        <br/>
+        <h2>About CAL Corp.</h2>
+        <div>CAL corp is made up of a group of Fanshawe College graduates.<br/>
+        Our goal is to provide companies with well designed and programmed websited and applications.<br/>
+        We are a new company with only personal programs under our belt.<br/> 
+        We strive to learn new and inovative tecniques to aid in creating the best products.<br/>
+        We create web sites, mobile apps and more. </div>
       </div>
     </main>
   )
