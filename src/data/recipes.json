@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "title": "Old Fashioned Pancakes",
+    "image": "pancakes.jpg",
+    "description": "Fluffy homestyle pancakces",
+    "ingredients": ["1 Egg,", "1 1/4 Cup Milk", "1 1/4 Cup Flour", "3 Tb Butter", "1 Tb Sugar", "1/4 t Salt", "3 Tb Baking Powder", "Maple Syrup"],
+    "directions": [
+      "Melt your butter. Combined melted butter with milk and egg.",
+      "In a separate bowl combine flour, baking powder, sugar, and salt. Mix well and add your wet ingredients.",
+      "In a pan on medium heat, lightly oil or butter your pan, before pouring or scooping the pancake batter onto it. Batter should be thick but still slightly viscous. When in the pan the batter should measure about 1/2 inch thickness.",
+      "Let cook until small bubbles form in the batter, and then flip. Cook opposite side until golden brown."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Vegetarian Lasagna",
+    "image": "lasagna.jpg",
+    "description": "Spinach and Cheese Lasagna",
+    "ingredients": ["Package of Uncooked Lasagna Noodles", "Olive Oil", "2 Onions", "5 Mushrooms", "1 Bulb of Garlic", "1 Can of Tomato Sauce", "Tomato Paste", "1 Large Bag of Spinach", "2 Cup Mozzarella Cheese", "1/4 Cup Parmesan Cheese", "200 g Ricotta Cheese", "Parsley", "Basil", "Salt", "Pepper", "Italian Seasoning", "Fennel Seeds"],
+    "directions": [
+      "In a pot, simmer your tomato sauce on low and add your spices. Let that cook for 20 minutes.",
+      "Preheat oven to 350 degrees F.",
+      "In a pan on medium heat, simmer your onions, garlic, and mushrooms until tender.",
+      "Place your vegetable mixture into your sauce.",
+      "Boil a pot of water and place your lasagna noodles (9 is usually enough). Even if they say no boiling required on the package. It will come out better if you boil them first.",
+      "Strain the water away let your noodles cool for 2 minutes. ",
+      "In a 9x13-inch baking dish: layer your ingredients in as thin layers as possible. Order of layering should be sauce, spinach, cheese, noodles, repeat. On top-most layer you will end with just sauce, spinach, cheese, and add extra parmesan on this layer.",
+      "Bake in the oven for 1 hour and let cook for 10 minutes before serving."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Homemade Burgers",
+    "image": "burger.jpg",
+    "description": "Delicious Juicy Homemade Burgers",
+    "ingredients": ["1 Lb Medium Ground Beef", "1 Egg", "Slice of Bread", "1 Onion", "3 Garlic Cloves", "2 Tb Worcesterchire Sauce", "2 Tb Milk", "1 t Salt", "1 t Pepper", "Chili Pepper", "Onion Powder", "Cayenne Pepper"],
+    "directions": [
+      "Remove your ground beef from the fridge 30 minutes before starting. Otherwise it will be very cold on your hands.",
+      "Dice a large onion into fine pieces and grate or finely chop your garlic.",
+      "In a bowl combine your milk and slice of bread. Let that sit and soak for a minute and then add your spices, onion, and garlic. ",
+      "Add your ground beef and mix with your hands until combined throughly.",
+      "Shape your patties. You can use any thickness you like, but remember to indent the center top with a spoon so they don't puff out while cooking.",
+      "You can store them on a baking tray or plate at this time.",
+      "Get your cook surface hot at this time. Either stove or BBQ. It should be medium-high heat. If cooking on the stove you can optionally add butter.",
+      "Cook your patties for about 3-4 minutes per side. Adjusting for thinner patties."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Homemade Burgers",
+    "image": "burger.jpg",
+    "description": "Delicious Juicy Homemade Burgers",
+    "ingredients": ["1 Lb Medium Ground Beef", "1 Egg", "Slice of Bread", "1 Onion", "3 Garlic Cloves", "2 Tb Worcesterchire Sauce", "2 Tb Milk", "1 t Salt", "1 t Pepper", "Chili Pepper", "Onion Powder", "Cayenne Pepper"],
+    "directions": [
+      "Remove your ground beef from the fridge 30 minutes before starting. Otherwise it will be very cold on your hands.",
+      "Dice a large onion into fine pieces and grate or finely chop your garlic.",
+      "In a bowl combine your milk and slice of bread. Let that sit and soak for a minute and then add your spices, onion, and garlic. ",
+      "Add your ground beef and mix with your hands until combined throughly.",
+      "Shape your patties. You can use any thickness you like, but remember to indent the center top with a spoon so they don't puff out while cooking.",
+      "You can store them on a baking tray or plate at this time.",
+      "Get your cook surface hot at this time. Either stove or BBQ. It should be medium-high heat. If cooking on the stove you can optionally add butter.",
+      "Cook your patties for about 3-4 minutes per side. Adjusting for thinner patties."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Homemade Burgers",
+    "image": "burger.jpg",
+    "description": "Delicious Juicy Homemade Burgers",
+    "ingredients": ["1 Lb Medium Ground Beef", "1 Egg", "Slice of Bread", "1 Onion", "3 Garlic Cloves", "2 Tb Worcesterchire Sauce", "2 Tb Milk", "1 t Salt", "1 t Pepper", "Chili Pepper", "Onion Powder", "Cayenne Pepper"],
+    "directions": [
+      "Remove your ground beef from the fridge 30 minutes before starting. Otherwise it will be very cold on your hands.",
+      "Dice a large onion into fine pieces and grate or finely chop your garlic.",
+      "In a bowl combine your milk and slice of bread. Let that sit and soak for a minute and then add your spices, onion, and garlic. ",
+      "Add your ground beef and mix with your hands until combined throughly.",
+      "Shape your patties. You can use any thickness you like, but remember to indent the center top with a spoon so they don't puff out while cooking.",
+      "You can store them on a baking tray or plate at this time.",
+      "Get your cook surface hot at this time. Either stove or BBQ. It should be medium-high heat. If cooking on the stove you can optionally add butter.",
+      "Cook your patties for about 3-4 minutes per side. Adjusting for thinner patties."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Homemade Burgers",
+    "image": "burger.jpg",
+    "description": "Delicious Juicy Homemade Burgers",
+    "ingredients": ["1 Lb Medium Ground Beef", "1 Egg", "Slice of Bread", "1 Onion", "3 Garlic Cloves", "2 Tb Worcesterchire Sauce", "2 Tb Milk", "1 t Salt", "1 t Pepper", "Chili Pepper", "Onion Powder", "Cayenne Pepper"],
+    "directions": [
+      "Remove your ground beef from the fridge 30 minutes before starting. Otherwise it will be very cold on your hands.",
+      "Dice a large onion into fine pieces and grate or finely chop your garlic.",
+      "In a bowl combine your milk and slice of bread. Let that sit and soak for a minute and then add your spices, onion, and garlic. ",
+      "Add your ground beef and mix with your hands until combined throughly.",
+      "Shape your patties. You can use any thickness you like, but remember to indent the center top with a spoon so they don't puff out while cooking.",
+      "You can store them on a baking tray or plate at this time.",
+      "Get your cook surface hot at this time. Either stove or BBQ. It should be medium-high heat. If cooking on the stove you can optionally add butter.",
+      "Cook your patties for about 3-4 minutes per side. Adjusting for thinner patties."
+    ]
+  }
+]

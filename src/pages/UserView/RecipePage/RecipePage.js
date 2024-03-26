@@ -7,7 +7,6 @@ function RecipePage () {
     <main>
       <RecipesBanner/>
       <div className='container p-3'>
-        <h2>Recipe Page</h2>
         <Recipes />
       </div>
     </main>

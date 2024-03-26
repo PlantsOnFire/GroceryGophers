@@ -1,0 +1,18 @@
+@import '../../../styles/colors.scss';
+
+.recipe-item {
+  background-color: $light-green;
+  height: 100%;
+  .item-description {
+    font-style: italic;
+  }
+  .recipe-image {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+  }
+  .scroll-container {
+    height: 10vw;
+    overflow-y: auto;
+  }
+}
