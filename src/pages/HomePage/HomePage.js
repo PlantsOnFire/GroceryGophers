@@ -35,7 +35,7 @@ export default function HomePage({isLoggedIn}) {
           Preventing yourself from a pantry full of one ingredient or having your stock of vegetables go bad.
         </div>
       </div>
-      <ul className="nav justify-content-around justify-items-center pb-2 text-center col mb-3 container">
+      <ul id='link-boxes' className="nav justify-content-around justify-items-center pb-2 text-center col mb-3 container">
         <li className="nav-item pb-2 text-center col">
           <NavLink to={links[0]} className='nav-link'>Grocery List</NavLink>
         </li>
