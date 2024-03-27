@@ -3,7 +3,7 @@ import {useState} from 'react';
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import apiRequest from '../../api/apiRequest';
 
-function RegisterForm () {
+function RegisterForm (props) {
   const API_URL = 'http://localhost:8080/register';
   const [fetchError, setFetchError] = useState(null);
   const [username, setUsername] = useState('');
@@ -14,6 +14,7 @@ function RegisterForm () {
   const [passError2, setPassError2] = useState([]);
   const [passVis1, setPassVis1] = useState('password');
   const [passVis2, setPassVis2] = useState('password');
+  const [success, setSuccess] = useState(null);
 
   //=========Password Visibility============
   function toggleVisibility1 () {
@@ -69,9 +70,11 @@ function RegisterForm () {
       body: JSON.stringify({user: username, pwd: password1})
     };
     setFetchError(null);
+    setSuccess(null);
     const result = await apiRequest(API_URL, postOptions);
     if (result.errMsg) setFetchError(result.errMsg);
     //======Update UI to tell user their account is created!======
+    setSuccess(result.response.success);
   }
   return(
     <form onSubmit={validateForm} className='container'>
@@ -101,7 +104,13 @@ function RegisterForm () {
         </div>
       <button type='submit' className='m-3'>Register</button>
       {fetchError &&
-        <div className='form-text error'>{fetchError}</div>
+        <div className='fs-4 error text-center mb-4'>{fetchError}</div>
+      }
+      {success &&
+        <div className='text-center'>
+          <div className='fs-4 success text-center mb-4'>{success}</div>
+          <button className='mb-4' onClick={()=>props.setAccountForm('login')}>Login Now!</button>        
+        </div>
       }
     </form>
   )

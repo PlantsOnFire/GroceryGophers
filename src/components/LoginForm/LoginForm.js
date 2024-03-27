@@ -2,6 +2,7 @@ import './LoginForm.scss';
 import { useState } from 'react';
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import apiRequest from '../../api/apiRequest';
+import { useNavigate } from 'react-router-dom';
 
 function LoginForm ({isLoggedIn, setLoggedIn}) {
   const API_URL = 'http://localhost:8080/auth';
@@ -11,6 +12,7 @@ function LoginForm ({isLoggedIn, setLoggedIn}) {
   const [userError, setUserError] = useState([]);
   const [passError, setPassError] = useState([]);
   const [passVis, setPassVis] = useState('password');
+  const navigate = useNavigate();
 
   function toggleVisibility () {
     passVis === 'password' ? setPassVis('text') : setPassVis('password');
@@ -72,7 +74,10 @@ function LoginForm ({isLoggedIn, setLoggedIn}) {
         }
       </form>
       {isLoggedIn &&
-        <div className='container-fluid p-3 text-center' id='logged-in'>You are now logged in!</div>
+        <div className='p-3 text-center' id='logged-in'>
+          <div className='mb-3 success'>You are now logged in!</div>
+          <button onClick={()=>navigate('./users/grocery-list')}>Let's Make a Grocery List!</button>
+        </div>
       }
     </>
     
