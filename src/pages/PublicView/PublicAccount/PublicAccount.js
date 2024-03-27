@@ -20,7 +20,7 @@ function PublicAccount ({isLoggedIn, setLoggedIn}) {
           </div>
         </div>
 
-          <RegisterForm/>
+          <RegisterForm setAccountForm={setAccountForm}/>
         </>
         : <>
           <div id='switch-form-background' className='mb-3'>
