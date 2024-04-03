@@ -52,15 +52,18 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       method="POST"
     >
-      <div>
-        <input type="text" placeholder="Your name" name="name" required />
+      <div >
+        <input type="text" placeholder="Your name" name="name" required size="71" />
       </div>
-      <div>
-        <input type="email" placeholder="Email" name="email" required />
+      <br/>
+      <div className="your-email">
+        <input type="email" placeholder="Email" name="email" required size="71"/>
       </div>
-      <div>
-        <textarea placeholder="Your message" name="message" required />
+      <br/>
+      <div className="your-message">
+        <textarea placeholder="Your message" name="message" required rows="5" cols="70"/>
       </div>
+      <br/>
       <div>
         <button type="submit"> Send a message </button>
       </div>

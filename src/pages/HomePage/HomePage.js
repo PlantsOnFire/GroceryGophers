@@ -1,5 +1,6 @@
 import './HomePage.scss';
 import gghero from '../../assets/GG-Hero-2.0.png';
+import shelf from '../../assets/table-top-isolate-removebg-preview.png';
 import { NavLink, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
@@ -46,6 +47,7 @@ export default function HomePage({isLoggedIn}) {
           <NavLink to={links[2]} className='nav-link'>Recipes</NavLink> 
         </li>
       </ul>
+      <img id='link-shelf' src= {shelf}/>
       <ul className="nav justify-content-around justify-items-center pb-2 text-center col mb-5 container link-boxes">
         <li className="nav-item pb-2 text-center col">
           <NavLink to={links[3]} className='nav-link'>Account</NavLink>
@@ -57,6 +59,7 @@ export default function HomePage({isLoggedIn}) {
           <NavLink to='/about' className='nav-link'>About</NavLink>
         </li>
       </ul>
+      <img id='bottom-link-shelf' src= {shelf}/>
     </main>
   )
 }
